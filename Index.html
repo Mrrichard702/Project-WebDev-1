@@ -1,3 +1,11 @@
+<!--
+        Evan
+        Course:Software Development 20S
+        Teacher:Mr.Hardman
+        School:Pembina Trails Early College
+        Date Last Modified: October 24th
+      -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,7 +16,7 @@
     <header>
       <h1>My favourite Games</h1>
       <nav>
-        <ol>
+        <ul>
           <li><a href="1st-Game.html">My number 1 favourite game</a></li>
           <li><a href="2nd-Game.html">My 2nd favourite game</a></li>
           <li><a href="3rd-Game.html">My 3rd favourite game</a></li>
@@ -17,15 +25,88 @@
     </header>
   </head>
   <body>
+    <!--A table of me breifly talking about things i like about the games i play-->
     <section>
       <h2>some important info i need to have</h2>
-      <!--
-        Evan
-        Course:Software Development 20S
-        Teacher:Mr.Hardman
-        School:Pembina Trails Early College
-        Date Last Modified: October 17th
-      -->
+      <table>
+        <tr>
+          <th>&nbsp;music i enjoy listening to from these games&nbsp;</th>
+          <th>&nbsp;bosses i liked fighting</th>
+        </tr>
+        <tr>
+          <td>Divine Showdown</td>
+          <td>Gabriels rematch</td>
+        </tr>
+        <tr>
+          <td>Pure Vessel</td>
+          <td>Nightmare King</td>
+        </tr>
+        <tr>
+          <td>No More What Ifs</td>
+          <td>Dr.Maruki</td>
+        </tr>
+      </table>
+    </section>
+    <div>
+      <H2>
+        On to some <i>various</i> forms about my <strong>webpage</strong>
+      </H2>
+    </div>
+    <!--A load of forms for after the user is finished checking out the other 3 webpages-->
+    <section>
+       <form name="videogame suggestions" id="game recommendations" method="get">
+        <label for="Some cool videogames">
+          out of these 3 videogames which might you try [required]:
+        </label>
+        <input type="text" name="games" id="recommendations" required />
+        <div>
+          <label for="email-address">Please Enter your E-mail Address: </label>
+        <input
+          type="email"
+          name="email"
+          id="email-address"
+          minlength="6"
+          maxlength="40" />
+        </div>
+        <p>
+          which was your favourite webpage
+        </p>
+        <div>
+        <input
+          type="radio"
+          id="1st game option"
+          name="fav_game 1"
+          value="ULTRAKILL" />
+        <label for="game">ULTRAKILL</label>
+        <br />
+        <input
+          type="radio"
+          id="2nd game option"
+          name="fav_game 2"
+          value="P5R" />
+        <label for="game">Persona 5 Royal</label><br />
+        <input type="radio" id="3rd game option" name="fav_game 3" value="Hollow Knight" />
+        <label for="game 3">Hollow Knight</label>
+        </div>
+          <form>
+            <label for="username">Pick a username for your profile:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Choose a password if you made a username:</label><br>
+            <input type="password" id="pwd" name="pwd">
+          </form>
+          <div>
+            <input
+          type="reset"
+          name="clearform"
+          id="clear"
+          value="Click This to Clear All Inputs" />
+          <br />
+          <input
+          type="submit"
+          name="submut button"
+          id="submit"
+          value="Click this to submit your suggestion" />
+          </div>
     </section>
   </body>
 </html>
